@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velox.com.mx</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #250055;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 15px;
+      background-color: #292929;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus,
+    nav ul li a.active {
+      background-color: #ffcc00;
+      color: #250055;
+    }
+
+    /* Main content */
+    main {
+      padding: 20px;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+      padding: 30px;
+      background-color: #1a1a1a;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    .slide:target {
+      display: block;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .product {
+      background: #292929;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      background: #ffcc00;
+      color: #250055;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 20px;
+      background-color: #250055;
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VELOX.COM.MX</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#ropa">Ropa</a></li>
+        <li><a href="#bolsas">Bolsas</a></li>
+        <li><a href="#joyeria">Joyería</a></li>
+        <li><a href="#fragancias">Fragancias</a></li>
+        <li><a href="#relojes">Relojes</a></li>
+        <li><a href="#escritura">Escritura</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+    <!-- Diapositiva 1: Home -->
+    <section id="home" class="slide">
+      <h1>Bienvenido a VELOX.COM.MX</h1>
+      <p>Explora nuestras categorías de productos de lujo.</p>
+      <div class="products">
+        <div class="product">
+          <img src="https://i.postimg.cc/Hnn0xnqL/IMG-1194.png" alt="Pluma Montblanc">
+          <h2>Pluma Montblanc</h2>
+          <p>MXN 4,200</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/jdbGkbYF/IMG-1299.png" alt="Handbag">
+          <h2>Handbag</h2>
+          <p>MXN 18,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/fbQvKw9H/IMG-1201.png" alt="Collier Trinity Ruban Necklace">
+          <h2>Collier Trinity Ruban Necklace</h2>
+          <p>USD 76,500</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/0NG0XLG9/IMG-1217.png" alt="Limited Edition Coffret J’adore">
+          <h2>Limited Edition Coffret J’adore</h2>
+          <p>MXN 34,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/9MWt6J1Z/IMG-1221.png" alt="Code 11.59 Watch by Audemars Piguet">
+          <h2>Code 11.59 Watch by Audemars Piguet</h2>
+          <p>MXN 233,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/DwHQB1Sd/IMG-1232.png" alt="Rick Owens Cargo Pants">
+          <h2>Rick Owens Cargo Pants</h2>
+          <p>MXN 15,230</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 2: Ropa -->
+    <section id="ropa" class="slide">
+      <h1>Clothes</h1>
+      <div class="products">
+        <div class="product">
+          <img src="https://i.postimg.cc/nhnFQWF6/IMG-1231.png" alt="Jumbo Geobasket Sneakers">
+          <h2>Jumbo Geobasket Sneakers</h2>
+          <p>MXN 21,275</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/DwHQB1Sd/IMG-1232.png" alt="Cargo Pants with Drawstrings">
+          <h2>Cargo Pants with Drawstrings</h2>
+          <p>MXN 21,275</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/rw2dZg8J/IMG-1234.png" alt="Fiesta Luna Dress">
+          <h2>Fiesta Luna Dress</h2>
+          <p>MXN 3,300</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/SKszcRQF/IMG-1235.png" alt="Sleeveless Dress">
+          <h2>Sleeveless Dress</h2>
+          <p>MXN 8,325</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/KY9djqjr/IMG-1301.png" alt="Cargo Back Pack">
+          <h2>Cargo Backpack</h2>
+          <p>MXN 6,850</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/nVYccZZv/IMG-1237.png" alt="Pyramid Ring with Crystal">
+          <h2>Pyramid Ring with Crystal</h2>
+          <p>MXN 4,200</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 3: Bolsas -->
+    <section id="bolsas" class="slide">
+      <h1>Bags</h1>
+      <div class="products">
+        <div class="product">
+          <img src="https://i.postimg.cc/SKSt8wvY/IMG-1307.png" alt="Dior Lady Dio">
+          <h2>Dior Lady Dio</h2>
+          <p>MXN 125,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/jdbGkbYF/IMG-1299.png" alt="Bolso Pequeño Con Solapa">
+          <h2>Bolso Pequeño Con Solapa</h2>
+          <p>MXN 111,830</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/XvPmbssZ/IMG-1309.png" alt="Hermès Kelly">
+          <h2>Hermès Kelly</h2>
+          <p>MXN 420,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/Hnbk5cr2/IMG-1308.png" alt="Louis Vuitton Neverfull">
+          <h2>Louis Vuitton Neverfull</h2>
+          <p>MXN 44,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/MGr734dL/IMG-1311.png" alt="Hermès Birkin">
+          <h2>Hermès Birkin</h2>
+          <p>MXN 510,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/gk8Q8yNR/IMG-1310.png" alt="Louis Vuitton Speedy">
+          <h2>Louis Vuitton Speedy</h2>
+          <p>MXN 43,000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 4: Joyería -->
+    <section id="joyeria" class="slide">
+      <h1>Jewelry</h1>
+      <div class="products">
+        <div class="product">
+          <img src="https://i.postimg.cc/gkFyV4bM/IMG-1318.png" alt="Collar Tiffany">
+          <h2>Collar Return to Tiffany</h2>
+          <p>$16,500</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/W1sMK33g/IMG-1319.png" alt="Pulsera Tiffany">
+          <h2>Pulsera Tiffany T</h2>
+          <p>$56,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/T3QrX6LS/IMG-1320.png" alt="Anillo Tiffany True">
+          <h2>Anillo Tiffany True</h2>
+          <p>$270,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/QMtc8ycM/IMG-1321.png" alt="Aretes Victoria">
+          <h2>Aretes Victoria</h2>
+          <p>$650,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/7hvzNPdC/IMG-1322.png" alt="Colgante Elsa Peretti">
+          <h2>Colgante Elsa Peretti Open Heart</h2>
+          <p>$16,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/m2y9QswD/IMG-1323.png" alt="Brazalete HardWear">
+          <h2>Brazalete HardWear</h2>
+          <p>$72,000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 5: Fragancias -->
+    <section id="fragancias" class="slide">
+      <h1>Fragrances</h1>
+      <div class="products">
+        <!-- Fragancias de Dior (Mujer) -->
+        <div class="product">
+          <img src="https://i.postimg.cc/jdd1Nm37/IMG-1334.png" alt="Miss Dior Parfum">
+          <h2>Miss Dior Parfum</h2>
+          <p>$3,800</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/Gh8kZjHf/IMG-1335.png" alt="J’adore Eau de Parfum">
+          <h2>J’adore Eau de Parfum</h2>
+          <p>$4,200</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/YSpLqNCM/IMG-1336.png" alt="Hypnotic Poison Eau de Parfum">
+          <h2>Hypnotic Poison Eau de Parfum</h2>
+          <p>$4,000</p>
+        </div>
+
+        <!-- Fragancias de Creed Aventus (Hombre) -->
+        <div class="product">
+          <img src="https://i.postimg.cc/YSpLqNCM/IMG-1336.png" alt="Creed Aventus Eau de Parfum">
+          <h2>Creed Aventus Eau de Parfum</h2>
+          <p>$9,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/mrffQVHW/IMG-1337.png" alt="Creed Aventus Cologne">
+          <h2>Creed Aventus Cologne</h2>
+          <p>$8,800</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/0ywfD6bM/IMG-1198.png" alt="Creed Green Irish Tweed">
+          <h2>Creed Green Irish Tweed</h2>
+          <p>$8,500</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 6: Relojes -->
+    <section id="relojes" class="slide">
+      <h1>Watches</h1>
+      <div class="products">
+        <div class="product">
+          <img src="https://i.postimg.cc/zf07JG52/IMG-1338.png" alt="Royal Oak Selfwinding">
+          <h2>Royal Oak Selfwinding</h2>
+          <p>$860,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/T3xB1hMT/IMG-1339.png" alt="Royal Oak Offshore Diver">
+          <h2>Royal Oak Offshore Diver</h2>
+          <p>$1,100,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/kghNZhyL/IMG-1340.png" alt="Royal Oak Chronograph">
+          <h2>Royal Oak Chronograph</h2>
+          <p>$900,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/DwW4WfqY/IMG-1341.png" alt="Royal Oak Frosted Gold">
+          <h2>Royal Oak Frosted Gold</h2>
+          <p>$1,400,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/Zq8R3W0j/IMG-1342.png" alt="Code 11.59 Selfwinding Chronograph">
+          <h2>Code 11.59 Selfwinding Chronograph</h2>
+          <p>$960,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/T1zMCc4b/IMG-1343.png" alt="Royal Oak Jumbo Extra-Thin">
+          <h2>Royal Oak Jumbo Extra-Thin</h2>
+          <p>$1,800,000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 7: Escritura -->
+    <section id="escritura" class="slide">
+      <h1>Pens</h1>
+      <div class="products">
+        <div class="product">
+          <img src="https://i.postimg.cc/W166n6WJ/IMG-1344.png" alt="Meisterstück 149">
+          <h2>Meisterstück 149</h2>
+          <p>$14,500</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/28dZRj4s/IMG-1345.png" alt="Starwalker Precious Resin">
+          <h2>Starwalker Precious Resin</h2>
+          <p>$11,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/R0WhFvHV/IMG-1346.jpg" alt="Meisterstück Le Petit Prince">
+          <h2>Meisterstück Le Petit Prince</h2>
+          <p>$16,800</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/x1DqdwPK/IMG-1353.png" alt="Great Characters Enzo Ferrari">
+          <h2>Great Characters Enzo Ferrari</h2>
+          <p>$24,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/9FVQ5dXp/IMG-1354.png" alt="Heritage Rouge et Noir">
+          <h2>Heritage Rouge et Noir</h2>
+          <p>$21,000</p>
+        </div>
+        <div class="product">
+          <img src="https://i.postimg.cc/vZ4RpTnh/IMG-1355.png" alt="Meisterstück Solitaire Doué">
+          <h2>Meisterstück Solitaire Doué</h2>
+          <p>$33,000</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>CONTACTOS</p>
+  </footer>
+</body>
+</html>
